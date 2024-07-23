@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PresenacionProfesional.MainPage">
+
+    <StackLayout>
+        <Frame Margin="10"
+               BorderColor="#00a8ff"
+               CornerRadius="150"
+               HeightRequest="200"
+               WidthRequest="200"
+               IsClippedToBounds="True"
+               HorizontalOptions="Center"
+               VerticalOptions="Center">
+            <Image Source="BOB.png"
+                   BackgroundColor="#ffffff"
+                   Aspect="AspectFill"
+                   Margin="-8"
+                   HeightRequest="100"
+                   WidthRequest="100" />
+        </Frame>
+
+        <Label Text="Bob Sponge"
+               TextColor="Black"
+               FontSize="30"
+               Padding="1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <Label Text="LAS AVENTURAS DE BOB SPONGE"
+               TextColor="Black"
+               FontSize="20"
+               Padding="0"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <Label Text="Bob Esponja es un personaje animado conocido por su entusiasmo y optimismo. Vive en una piña debajo del mar en la ciudad de Fondo de Bikini. Es un trabajador dedicado en el Crustáceo Cascarudo, donde cocina hamburguesas. Bob Esponja es famoso por su personalidad alegre y su deseo de hacer amigos."
+               TextColor="Black"
+               FontSize="22"
+               FontAttributes="Bold"
+               Margin="8"
+               Padding="10,10,10,10"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="Center" />
+
+        <Label Text="Mis Redes Sociales"
+               TextColor="#44bd32"
+               FontSize="25"
+               Padding="0"
+               FontFamily="Lobster"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <StackLayout Orientation="Horizontal"
+                     HeightRequest="80"
+                     BackgroundColor="#12CBC4"
+                     Margin="10">
+            
+            <StackLayout Spacing="0"
+                         BackgroundColor="#f5f6fa"
+                         Orientation="Horizontal"
+                         HorizontalOptions="Center">
+
+                <Button BackgroundColor="#f5f6fa"
+                        WidthRequest="80"
+                        ImageSource="youtube.png"
+                        x:Name="btnveryoutube"
+                        Clicked="btnveryoutube_Clicked" />
+
+                <Button BackgroundColor="#f5f6fa"
+                        WidthRequest="80"
+                        ImageSource="linkedin.png"
+                        x:Name="btnverlinkedin"
+                        Clicked="btnverlinkedin_Clicked" />
+
+                <Button BackgroundColor="#f5f6fa"
+                        WidthRequest="80"
+                        ImageSource="twitter.png"
+                        x:Name="btnvertwitter"
+                        Clicked="btnvertwitter_Clicked" />
+
+                <Button BackgroundColor="#f5f6fa"
+                        WidthRequest="80"
+                        ImageSource="instagram.png"
+                        x:Name="btnverinstagrams"
+                        Clicked="btnverinstagrams_Clicked" />
+
+                <Button BackgroundColor="#f5f6fa"
+                        WidthRequest="80"
+                        ImageSource="facebook.png"
+                        x:Name="btnverfacebook"
+                        Clicked="btnverfacebook_Clicked" />
+            </StackLayout>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
